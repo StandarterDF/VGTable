@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="css/icon.png">
+        <link rel="stylesheet" href="css/index.css">
+        <title>VGTable: Главная страница</title>
+    </head>
+    <body>
+        <div id="MenuContainer">
+            <div id="MenuButtons">
+                <div id="SiteName" onclick="HamsterCombat()">VGTable</div>
+                <div id="SettingsButton" onclick="SettingsButton()"></div>
+                <div id="FAQButton" onclick="FAQButton()"></div>
+            </div>
+        </div>
+        <div id="Container">
+            <div id="Background"><div id="BackroundImage"></div></div>
+            <div id="Divider" onclick="ChangeDateSeparator()">Числитель</div>
+            <div id="Table">
+                <div id="Monday" class="Day">
+                </div>
+                <div id="Tuesday" class="Day">
+                </div>
+                <div id="Wednesday" class="Day">
+                </div>
+                <div id="Thursday" class="Day">
+                </div>
+                <div id="Friday" class="Day">
+                </div>
+                <div id="Saturday" class="Day">
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/db.js"></script>
+    <script src="js/index.js"></script>
+</html>

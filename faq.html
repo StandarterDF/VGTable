@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="css/icon.png">
+        <link rel="stylesheet" href="css/faq.css">
+        <title>VGTable: FAQ</title>
+    </head>
+    <body>
+        <div id="MenuContainer">
+            <div id="MenuButtons">
+                <div id="SiteName" onclick="VGTable()">VGTable</div>
+                <div id="SettingsButton" onclick="SettingsButton()"></div>
+                <div id="FAQButton" onclick="FAQButton()"></div>
+            </div>
+        </div>
+        <div id="Container">
+            <div id="Background"><div id="BackroundImage"></div></div>
+            <div id="FAQContainer">
+                <div id="FAQArea">
+                    <div id="ItemList">
+                        <div class="FAQItem" onclick="FAQRedirect('faqs/0001.html')"><div>Здесь скоро что-то будет</div></div>
+                        <div class="FAQItem" onclick="FAQRedirect('faqs/0002.html')"><div>Здесь скоро что-то будет</div></div>
+                        <div class="FAQItem" onclick="FAQRedirect('faqs/0003.html')"><div>Здесь скоро что-то будет</div></div>
+                    </div>
+                    <div id="ViewArea"><iframe src="faqs/default.html" frameborder="0" id="faqhref"></iframe></div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/faq.js"></script>
+</html>

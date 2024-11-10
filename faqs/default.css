@@ -1,0 +1,41 @@
+#Text1
+{
+    width: 100%;
+    padding-top: 10px;
+}
+#Text1 div
+{
+    font-size: 35px;
+    line-height: 45px;
+    color: white;
+    padding-left: 25px;
+}
+#Text1P
+{
+    padding-top: 10px;
+    width: 100%;
+}
+#Text1P div
+{
+    font-size: 35px;
+    line-height: 45px;
+    color: white;
+    padding-left: 50px;
+}
+#Text1PBackground
+{
+    padding-top: 10px;
+    width: 100%;
+}
+#Text1PBackground div
+{
+    font-size: 35px;
+    line-height: 45px;
+    color: white;
+    padding-left: 75px;
+    background: #2b2b2b;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}

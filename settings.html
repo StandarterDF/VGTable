@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="css/icon.png">
+        <link rel="stylesheet" href="css/settings.css">
+        <title>VGTable: Настройка</title>
+    </head>
+    <body>
+        <div id="MenuContainer">
+            <div id="MenuButtons">
+                <div id="SiteName" onclick="VGTable()">VGTable</div>
+                <div id="SettingsButton" onclick="SettingsButton()"></div>
+                <div id="FAQButton" onclick="FAQButton()"></div>
+            </div>
+        </div>
+        <div id="Container">
+            <div class="SettingsContainer">
+                <div class="SettingLine">
+                    <div class="OptionName">
+                        <div class="Name">Группа</div>
+                    </div>
+                    <div class="OptionSet">
+                        <select id="GroupID">
+                        </select>
+                    </div>
+                </div> 
+                <div class="SettingLine">
+                    <div class="OptionName">
+                        <div class="Name">Подгруппа</div>
+                    </div>
+                    <div class="OptionSet">
+                        <select id="SubgroupID">
+                            <Option>1</Option>
+                            <Option>2</Option>
+                            <Option>3</Option>
+                        </select>
+                    </div>
+                </div>
+                <div class="SettingLine">
+                    <div class="OptionName">
+                        <div class="Name">Первым был Числитель или Знаменатель?</div>
+                    </div>
+                    <div class="OptionSet">
+                        <select id="DateseparatorID">
+                            <Option id="DateseparatorID_1">Числитель</Option>
+                            <Option id="DateseparatorID_2">Знаменатель</Option>
+                        </select>
+                    </div>
+                </div>  
+                <div class="SettingLine">
+                    <div class="OptionName">
+                        <div class="Name">Тема</div>
+                    </div>
+                    <div class="OptionSet">
+                        <select id="ThemeID">
+                            <Option>Тёмная</Option>
+                            <Option>Светлая</Option>
+                        </select>
+                    </div>
+                </div>
+                <div class="SettingLine">
+                    <div class="OptionName">
+                        <div class="Name">Debug</div>
+                    </div>
+                    <div class="OptionSet">
+                        <select id="DebugID">
+                            <Option>Да</Option>
+                            <Option>Нет</Option>
+                        </select>
+                    </div>
+                </div>  
+                <!-- <div class="SettingLine"><div class="OptionName"><div class="Name">TEST</div></div><div class="OptionSet"><select><Option>1</Option><Option>1</Option></select></div></div> 
+                <div class="SettingLine"><div class="OptionName"><div class="Name">TEST</div></div><div class="OptionSet"><select><Option>1</Option><Option>1</Option></select></div></div>  
+                <div class="SettingLine"><div class="OptionName"><div class="Name">TEST</div></div><div class="OptionSet"><select><Option>1</Option><Option>1</Option></select></div></div>  
+                <div class="SettingLine"><div class="OptionName"><div class="Name">TEST</div></div><div class="OptionSet"><select><Option>1</Option><Option>1</Option></select></div></div>  
+                <div class="SettingLine"><div class="OptionName"><div class="Name">TEST</div></div><div class="OptionSet"><select><Option>1</Option><Option>1</Option></select></div></div>  
+                <div class="SettingLine"><div class="OptionName"><div class="Name">TEST</div></div><div class="OptionSet"><select><Option>1</Option><Option>1</Option></select></div></div>  
+                <div class="SettingLine"><div class="OptionName"><div class="Name">TEST</div></div><div class="OptionSet"><select><Option>1</Option><Option>1</Option></select></div></div>  
+                <div class="SettingLine"><div class="OptionName"><div class="Name">TEST</div></div><div class="OptionSet"><select><Option>1</Option><Option>1</Option></select></div></div>  
+                <div class="SettingLine"><div class="OptionName"><div class="Name">TEST</div></div><div class="OptionSet"><select><Option>1</Option><Option>1</Option></select></div></div>  
+                <div class="SettingLine"><div class="OptionName"><div class="Name">TEST</div></div><div class="OptionSet"><select><Option>1</Option><Option>1</Option></select></div></div>  
+                <div class="SettingLine"><div class="OptionName"><div class="Name">TEST</div></div><div class="OptionSet"><select><Option>1</Option><Option>1</Option></select></div></div>  
+                <div class="SettingLine"><div class="OptionName"><div class="Name">TEST</div></div><div class="OptionSet"><select><Option>1</Option><Option>1</Option></select></div></div>  
+                <div class="SettingLine"><div class="OptionName"><div class="Name">TEST</div></div><div class="OptionSet"><select><Option>1</Option><Option>1</Option></select></div></div>  
+                <div class="SettingLine"><div class="OptionName"><div class="Name">TEST</div></div><div class="OptionSet"><select><Option>1</Option><Option>1</Option></select></div></div>  
+                <div class="SettingLine"><div class="OptionName"><div class="Name">TEST</div></div><div class="OptionSet"><select><Option>1</Option><Option>1</Option></select></div></div>  
+                <div class="SettingLine"><div class="OptionName"><div class="Name">TEST</div></div><div class="OptionSet"><select><Option>1</Option><Option>1</Option></select></div></div>  
+                <div class="SettingLine"><div class="OptionName"><div class="Name">TEST</div></div><div class="OptionSet"><select><Option>1</Option><Option>1</Option></select></div></div>    -->
+            </div>
+            <div class="SaveButton" onclick="SaveSettings()"><div>Сохранить настройки</div></div>
+        </div>
+    </body>
+    <script src="js/db.js"></script>
+    <script src="js/settings.js"></script>
+</html>
