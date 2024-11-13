@@ -14,11 +14,11 @@ function SaveSettings() {
     elements.forEach(function (element) {
         localStorage.setItem("VGTable_"+element.id, element.value);
     });
-    console.log(GroupID);
-    console.log(SubgroupID);
-    console.log(DateseparatorID);
-    console.log(ThemeID);
-    console.log(document.cookie);
+    if (localStorage.getItem("VGTable_DebugID") === "Да") console.log(GroupID);
+    if (localStorage.getItem("VGTable_DebugID") === "Да") console.log(SubgroupID);
+    if (localStorage.getItem("VGTable_DebugID") === "Да") console.log(DateseparatorID);
+    if (localStorage.getItem("VGTable_DebugID") === "Да") console.log(ThemeID);
+    if (localStorage.getItem("VGTable_DebugID") === "Да") console.log(document.cookie);
     document.getElementById("SaveButtonID").getElementsByTagName("div")[0].innerText = "Настройки сохранены";
     document.getElementById("SaveButtonID").getElementsByTagName("div")[0].style.color = "black";
     document.getElementById("SaveButtonID").style.backgroundColor = "#cb6666";
@@ -55,7 +55,7 @@ function AutoStart()
         }
     }
     var AllGroups = Object.keys(TableTest["groups"]);
-    console.log(AllGroups);
+    if (localStorage.getItem("VGTable_DebugID") === "Да") console.log(AllGroups);
     for (i = 0; i <= AllGroups.length; i++)
     {
         if (AllGroups[i] !== undefined)

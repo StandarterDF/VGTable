@@ -36,11 +36,11 @@ function ShowCurrentTable(Group, Subgroup, DateSeparator, Data=TableTest) {
             if (ArrayDates[CurrentDate.getDay() - 1] == CDate)
             {
                 document.getElementById(CDate).insertAdjacentHTML("beforeEnd",
-                    `<div class="WeekDay" id="WeekDayMonday" style="background-color: #ff9d90; color: black;"> ${ArrayDatesRus[ArrayDates.indexOf(CDate)]} </div>`
+                    `<div class="WeekDay" id="WeekDay` + CDate + `" style="background-color: #ff9d90; color: black; margin-top: 10px;"> ${ArrayDatesRus[ArrayDates.indexOf(CDate)]} </div>`
                 )
             } else {
                 document.getElementById(CDate).insertAdjacentHTML("beforeEnd",
-                    `<div class="WeekDay" id="WeekDayMonday"> ${ArrayDatesRus[ArrayDates.indexOf(CDate)]} </div>`
+                    `<div style="black; margin-top: 10px;" class="WeekDay" id="WeekDay` + CDate + `"> ${ArrayDatesRus[ArrayDates.indexOf(CDate)]} </div>`
                 )
             }
             //console.log(Data.groups[Group][DateSeparator][CDate].length)
@@ -53,9 +53,11 @@ function ShowCurrentTable(Group, Subgroup, DateSeparator, Data=TableTest) {
                     var DateNow = DateNow.getHours()*60+DateNow.getMinutes();
                     var DateStart = Number(Lesson[2].split(":")[0])*60 + Number(Lesson[2].split(":")[1])
                     var DateEnd =   Number(Lesson[3].split(":")[0])*60 + Number(Lesson[3].split(":")[1])
-                    //console.log(DateNow); console.log(DateStart); console.log(DateEnd);
+                    console.log(`Date Now (${CDate}) -> ${DateNow}`);
+                    console.log(`Date Start (${CDate}) -> ${DateStart}`); 
+                    console.log(`Date End (${CDate}) -> ${DateEnd}`); 
                     DayStyle = "background-color: #3D3D3D;";
-                    if (!(DateStart <= DateNow <= DateEnd) && CDate == ArrayDates[CurrentDate.getDay() - 1])
+                    if ((DateNow >= DateStart && DateNow <= DateEnd) && CDate === ArrayDates[CurrentDate.getDay() - 1])
                     {
                         DayStyle = "background-color: #973334;";
                     }
