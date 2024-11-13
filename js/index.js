@@ -98,21 +98,25 @@ function ClearTable() {
     }
 }
 function ChangeDateSeparator() {
-    ClearTable();
-    if (document.getElementById("Divider").innerText === "Числитель")
-    {
-        document.getElementById("Divider").innerText = "Знаменатель";
-        ShowCurrentTable(
-            localStorage.getItem("VGTable_GroupID"), 
-            localStorage.getItem("VGTable_SubgroupID"), 
-            "Denominator");
-    }
-    else if (document.getElementById("Divider").innerText === "Знаменатель") {
-        document.getElementById("Divider").innerText = "Числитель";
-        ShowCurrentTable(
-            localStorage.getItem("VGTable_GroupID"), 
-            localStorage.getItem("VGTable_SubgroupID"), 
-            "Numerator");
+    if (document.getElementById("Divider").innerText === "Пожалуйста, выставьте настройки!") {
+        document.location.href = "settings.html";
+    } else {
+        ClearTable();
+        if (document.getElementById("Divider").innerText === "Числитель")
+        {
+            document.getElementById("Divider").innerText = "Знаменатель";
+            ShowCurrentTable(
+                localStorage.getItem("VGTable_GroupID"), 
+                localStorage.getItem("VGTable_SubgroupID"), 
+                "Denominator");
+        }
+        else if (document.getElementById("Divider").innerText === "Знаменатель") {
+            document.getElementById("Divider").innerText = "Числитель";
+            ShowCurrentTable(
+                localStorage.getItem("VGTable_GroupID"), 
+                localStorage.getItem("VGTable_SubgroupID"), 
+                "Numerator");
+        }
     }
 }
 function AutoStart() {

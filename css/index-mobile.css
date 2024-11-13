@@ -2,8 +2,9 @@
 {
     width: 85%;
     text-align: center;
-    height: 40px;
-    font-size: 30px;
+    height: auto !important;
+    font-size: 35px !important;
+    line-height: 50px !important;
     color: white;
     background-color: #3D3D3D;
     border-radius: 7px;
@@ -16,8 +17,9 @@
 {
     width: 85%;
     text-align: center;
-    height: 40px;
-    font-size: 30px;
+    height: auto !important;
+    font-size: 35px !important;
+    line-height: 50px !important;
     color: white;
     background-color: #3D3D3D;
     border-radius: 5px;
