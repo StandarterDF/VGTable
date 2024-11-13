@@ -1,0 +1,125 @@
+:root {
+    --background-color: #1e1e1e;
+    --standart-transition: 0.5s ease-in-out;
+}
+/* ---------------------------------------------------------- */
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+body 
+{
+    background-color: var(--background-color);
+}
+::-webkit-scrollbar 
+{
+    display: none;
+}
+/* ---------------------------------------------------------- */
+/*
+#   Описание всех базовых классов
+*/
+/* ---------------------------------------------------------- */
+#Background
+{
+    top: 0px;
+    position: absolute;
+    background-color: var(--background-color);
+    background-image: url("img/backgroundInv.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.4;
+    width: 100%;
+    min-height: 100vh;
+    z-index: -1;
+}
+#MenuContainer
+{
+    margin-top: 25px;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    
+}
+#MenuButtons
+{
+    display: flex;
+    flex-direction: row;
+    background-color: #3D3D3D;
+    width: 85%;
+    height: 80px;
+    border-radius: 15px;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+}
+#SiteName {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+    font-size: 50px;
+    text-align: center;
+    height: 100%;
+    width: calc(100% - 160px);
+    line-height: 80px;
+    color: white;
+    opacity: 0.8;
+    overflow: hidden;
+    margin-left: 10px;
+    transition: var(--standart-transition);
+}
+#SiteName:hover {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+    font-size: 50px;
+    text-align: center;
+    height: 100%;
+    color: white;
+    text-shadow: 4px 4px 2px #000000;
+    opacity: 1;
+    transition: var(--standart-transition);
+}
+#SettingsButton {
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-image: url("img/icons/settings.png");
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    transition: var(--standart-transition);
+}
+#SettingsButton:hover {
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-image: url("img/icons/settings-border.png");
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transform: rotateZ(90deg);
+    transition: var(--standart-transition);
+}
+#FAQButton {
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-image: url("img/icons/information.png");
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    transition: var(--standart-transition);
+}
+#FAQButton:hover {
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-image: url("img/icons/information.png");
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transform: rotateZ(360deg);
+    transition: var(--standart-transition);
+}

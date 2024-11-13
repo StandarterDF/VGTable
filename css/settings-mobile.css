@@ -1,0 +1,129 @@
+#Container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    width: 100%;
+    /*outline: solid red;*/
+    align-items: center;
+}
+.SettingsContainer
+{
+    display: flex;
+    gap: 15px;
+    column-gap: 30px;
+    width: 85%;
+    flex-flow: column;
+    justify-content: space-between;
+    /* outline: solid red; */
+}
+.SettingLine 
+{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    background-color: #3D3D3D;
+    border-radius: 15px;
+    border-color: #000000;
+    transition: 0.1s ease-in-out;
+    /* outline: solid green; */
+}
+.SettingLine:hover 
+{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    background-color: #3D3D3D;
+    border-radius: 15px;
+    border-color: #5d5d5d;
+    border-width: 3px;
+    border-style: solid;
+    transition: 0.1s ease-in-out;
+    /* outline: solid green; */
+}
+.OptionName
+{
+    display: flex;
+    align-items: center;
+    background-color: #323232;
+    min-height: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.OptionName .Name
+{
+
+    background-color: #323232;
+    font-size: 30px;
+    padding-left: 25px;
+    color: white;
+    /* outline: solid blue; */
+}
+.OptionSet 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* outline: solid red; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* background-color: red; */
+}
+.OptionSet Select 
+{
+    width: 80%;
+    text-align: center;
+    height: 35px;
+    font-size: 25px;
+    background-color: #3D3D3D;
+    color: white;
+    border-radius: 5px;
+    /* outline: solid red; */
+}
+.SaveButton
+{
+    bottom: 25px;
+    display: flex;
+    width: 85%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #323232;
+    margin-top: 25px;
+    border-radius: 15px;
+    border-color: #000000;
+    border-width: 3px;
+    border-style: solid;
+    transition: 0.3s ease-in-out;
+}
+.SaveButton:hover
+{
+    position: absolute;
+    bottom: 25px;
+    display: flex;
+    width: 85%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #404040;
+    margin-top: 25px;
+    border-radius: 15px;
+    border-color: #000000;
+    border-width: 3px;
+    border-style: solid;
+    transition: 0.3s ease-in-out;
+}
+#SaveButtonID div 
+{
+    transition: var(--standart-transition);
+}
+.SaveButton div
+{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
