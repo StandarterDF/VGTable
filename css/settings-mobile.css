@@ -86,7 +86,6 @@
 }
 .SaveButton
 {
-    bottom: 25px;
     display: flex;
     width: 85%;
     height: 50px;
@@ -94,6 +93,7 @@
     align-items: center;
     background-color: #323232;
     margin-top: 25px;
+    margin-bottom: 25px;
     border-radius: 15px;
     border-color: #000000;
     border-width: 3px;
@@ -102,8 +102,6 @@
 }
 .SaveButton:hover
 {
-    position: absolute;
-    bottom: 25px;
     display: flex;
     width: 85%;
     height: 50px;
@@ -111,6 +109,7 @@
     align-items: center;
     background-color: #404040;
     margin-top: 25px;
+    margin-bottom: 25px;
     border-radius: 15px;
     border-color: #000000;
     border-width: 3px;
