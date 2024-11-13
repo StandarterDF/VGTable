@@ -1,6 +1,6 @@
 #Divider 
 {
-    width: 85%;
+    width: var(--procent-width);
     text-align: center;
     height: 40px;
     font-size: 30px;
@@ -14,7 +14,7 @@
 }
 #Divider:hover
 {
-    width: 85%;
+    width: var(--procent-width);
     text-align: center;
     height: 40px;
     font-size: 30px;
@@ -59,7 +59,7 @@
     grid-template-columns: repeat(6, 1fr);
     justify-content: center;
     gap: 10px;
-    width: 85%;
+    width: var(--procent-width);
     outline: 0px solid red;
 }
 .Day {

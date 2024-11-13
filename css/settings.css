@@ -12,7 +12,7 @@
     display: flex;
     gap: 15px;
     column-gap: 30px;
-    width: 85%;
+    width: var(--procent-width);
     flex-flow: row wrap;
     justify-content: space-between;
     /* outline: solid red; */
@@ -90,7 +90,7 @@
     position: absolute;
     bottom: 25px;
     display: flex;
-    width: 85%;
+    width: var(--procent-width);
     height: 50px;
     justify-content: center;
     align-items: center;
@@ -107,7 +107,7 @@
     position: absolute;
     bottom: 25px;
     display: flex;
-    width: 85%;
+    width: var(--procent-width);
     height: 50px;
     justify-content: center;
     align-items: center;

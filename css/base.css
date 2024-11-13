@@ -1,6 +1,7 @@
 :root {
     --background-color: #1e1e1e;
     --standart-transition: 0.5s ease-in-out;
+    --procent-width: 95%;
 }
 /* ---------------------------------------------------------- */
 * 
@@ -51,7 +52,7 @@ body
     grid-template-columns: auto 100px 100px;
     background-color: #3D3D3D;
     align-content: center;
-    width: 85%;
+    width: var(--procent-width);
     height: 80px;
     border-radius: 15px;
     border-color: black;

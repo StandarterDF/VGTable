@@ -11,7 +11,7 @@
     display: flex;
     gap: 15px;
     column-gap: 30px;
-    width: 85%;
+    width: var(--procent-width);
     flex-flow: column;
     justify-content: space-between;
     /* outline: solid red; */
@@ -87,7 +87,7 @@
 .SaveButton
 {
     display: flex;
-    width: 85%;
+    width: var(--procent-width);
     justify-content: center;
     align-items: center;
     background-color: #323232;
@@ -102,7 +102,7 @@
 .SaveButton:hover
 {
     display: flex;
-    width: 85%;
+    width: var(--procent-width);
     justify-content: center;
     align-items: center;
     background-color: #404040;
