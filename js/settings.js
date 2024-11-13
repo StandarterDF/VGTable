@@ -51,26 +51,29 @@ function AutoStart()
         // Проверяем наличие этого элемента в LocalStorage
         if (!localStorage.getItem(elementID)) {
             // Если элемента нет в LocalStorage, добавляем их с значением 0
-            localStorage.setItem(elementID, 1);
+            localStorage.setItem(elementID, 0);
         }
     }
     var AllGroups = Object.keys(TableTest["groups"]);
     console.log(AllGroups);
     for (i = 0; i <= AllGroups.length; i++)
     {
-        if (localStorage.getItem("VGTable_GroupID") != AllGroups[i])
+        if (AllGroups[i] !== undefined)
         {
-            GroupsID.insertAdjacentHTML("beforeEnd", `<Option>${AllGroups[i]}</Option>`);
-        }
-        else 
-        {
-            GroupsID.insertAdjacentHTML("beforeEnd", `<Option selected>${AllGroups[i]}</Option>`);
+            if (localStorage.getItem("VGTable_GroupID") != AllGroups[i])
+            {
+                GroupsID.insertAdjacentHTML("beforeEnd", `<Option>${AllGroups[i]}</Option>`);
+            }
+            else 
+            {
+                GroupsID.insertAdjacentHTML("beforeEnd", `<Option selected>${AllGroups[i]}</Option>`);
+            }
         }
     }
-    if (localStorage.getItem("VGTable_DateseparatorID") === "Числитель") {
-        document.getElementById("DateseparatorID_1").selected = "selected";
-    } else {
+    if (localStorage.getItem("VGTable_DateseparatorID") === "Знаменатель") {
         document.getElementById("DateseparatorID_2").selected = "selected";
+    } else {
+        document.getElementById("DateseparatorID_1").selected = "selected";
     }
     document.getElementById("SubgroupID").getElementsByTagName("option")[Number(localStorage.getItem("VGTable_SubgroupID")) - 1].selected = "selected";
 }
