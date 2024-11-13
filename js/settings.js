@@ -18,7 +18,15 @@ function SaveSettings() {
     console.log(SubgroupID);
     console.log(DateseparatorID);
     console.log(ThemeID);
-    console.log(document.cookie)
+    console.log(document.cookie);
+    document.getElementById("SaveButtonID").getElementsByTagName("div")[0].innerText = "Настройки сохранены";
+    document.getElementById("SaveButtonID").getElementsByTagName("div")[0].style.color = "black";
+    document.getElementById("SaveButtonID").style.backgroundColor = "#cb6666";
+    setTimeout(() => {
+        document.getElementById("SaveButtonID").getElementsByTagName("div")[0].innerText = "Сохранить настройки";
+        document.getElementById("SaveButtonID").getElementsByTagName("div")[0].style.color = "white";
+        document.getElementById("SaveButtonID").style.backgroundColor = "";
+    }, 1500);
 }
 
 function VGTable()
